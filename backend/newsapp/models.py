@@ -5,3 +5,4 @@ class NewsArticle(models.Model):
     author = models.CharField(max_length=20)
     published = models.DateTimeField()
     content = models.TextField()
+    imageUrl = models.URLField()
