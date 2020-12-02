@@ -15,6 +15,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'newsapp',
+    'todoapp',
 ]
 
 MIDDLEWARE = [
