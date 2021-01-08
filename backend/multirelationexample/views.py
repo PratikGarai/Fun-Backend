@@ -8,4 +8,5 @@ from . import forms
 class CreateMeal(CreateView):
     model = models.Meal
     form_class = forms.CreateMealForm
+    template_name = "createmealform.html"
     #success_url = reverse_lazy('main')

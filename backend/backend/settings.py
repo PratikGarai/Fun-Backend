@@ -17,7 +17,8 @@ INSTALLED_APPS = [
     'newsapp',
     'todoapp',
     'restaurant_menu',
-    'multirelationexample'
+    'multirelationexample',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
