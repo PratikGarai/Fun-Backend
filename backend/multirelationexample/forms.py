@@ -7,7 +7,8 @@ class CreateMealForm(forms.ModelForm):
         model = models.Meal
         fields = '__all__'
     
-    date = forms.DateInput()
+    date = forms.DateTimeField(input_formats=['%d/%m/%Y %H:%M'])
+    
     members = forms.ModelMultipleChoiceField(
         queryset = models.Member.objects.all(),
         widget = forms.CheckboxSelectMultiple
