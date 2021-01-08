@@ -16,7 +16,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'newsapp',
     'todoapp',
-    'restaurant_menu'
+    'restaurant_menu',
+    'multirelationexample'
 ]
 
 MIDDLEWARE = [
