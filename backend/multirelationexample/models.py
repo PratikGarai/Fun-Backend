@@ -9,3 +9,6 @@ class Member(models.Model):
     name  = models.CharField(max_length=50)
     age = models.PositiveIntegerField()
     address = models.TextField()
+
+    def __str__(self, *args, **kwargs):
+        return self.name
