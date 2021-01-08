@@ -3,5 +3,5 @@ from . import views
 app_name = 'multiplerelationexample'
 
 urlpatterns = [
-    path('create/', None),
+    path('create/', views.CreateMeal.as_view()),
 ]
