@@ -1,9 +1,30 @@
 {% extends 'multi_base.html' %}
+{% load bootstrap3 %}
 
 {% block content %}
-  <form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <button type="submit" class="btn btn-success">Save person</button>
-  </form>
+
+  <style>
+    .form-main {
+      padding : 5%;
+      margin-top : 5%;
+      margin-bottom : 5%;
+      border-radius : 10px;
+      background : #e6e6e6;
+    }
+
+  </style>
+
+  <div class="form-main">
+    <div class = "container">
+      <h1 class="mt-2">Create Meal</h1>
+      <hr class="mt-0 mb-4">
+
+      <form method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" name="" value="Add" class="btn btn-default">
+      </form>
+    </div>
+  </div>
+
 {% endblock %}

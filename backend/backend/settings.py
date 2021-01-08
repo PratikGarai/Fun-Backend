@@ -13,12 +13,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'bootstrap3',
     'rest_framework',
     'newsapp',
     'todoapp',
     'restaurant_menu',
     'multirelationexample',
-    'crispy_forms'
 ]
 
 MIDDLEWARE = [
